@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      .contact {
+        color: #20c997;
+        border: 1px solid #20c997;
+        cursor: pointer;
+        transition: all 300;
+      }
+
+      .contact:hover {
+        background-color: #20c997;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-dark text-light">
+    <nav
+      class="navbar fixed-top navbar-expand text-light bg-dark shadow-lg p-md-3 py-sm-2"
+    >
+      <div class="container-fluid">
+        <div
+          class="collapse show navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav grid gap-3-md">
+            <li class="nav-item">
+              <a
+                class="nav-link link-light fw-semibold link-opacity-75-hover"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-light fw-semibold link-opacity-75-hover"
+                href="#about-me"
+                >Sobre mim</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-light fw-semibold link-opacity-75-hover"
+                href="#projects"
+                >Projetos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="container-lg">
+        <div class="row min-vh-100 align-items-center justify-content-center">
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="home-img d-flex justify-content-center">
+              <img
+                src="./images/profile.jpeg"
+                class="rounded-circle mw-sm-100"
+                alt="profile"
+                style="object-fit: cover; aspect-ratio: 1/1; max-width: 75%"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="home-text">
+              <h1 class="fs-1 fw-bold text-uppercase" style="color: #20c997">
+                Desenvolvedor Frontend
+              </h1>
+              <h2>Erik Samuel Medeiros</h2>
+              <p class="text-light mt-3">
+                Estudante de Ciências da Computação desde 2022. Atuando na área
+                de Frontend como estagiário desde agosto de 2023.
+              </p>
+              <div class="mt-3 d-flex gap-3 align-items-center">
+                <a href="https://github.com/samuerikcoder" class="p-3 contact" target="_blank">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/erik-samuel-medeiros-a79109246/" class="p-3 contact" target="_blank">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me" class="mt-">
+      <div class="container-lg">
+        <div class="row min-vh-100 align-items-center justify-content-center">
+          <div class="col-md-6 mt-5 mt-md-0">
+            <h3>Experiência</h3>
+            <div
+              class="card bg-secondary text-light shadow-lg mw-100"
+              style="width: 80%"
+            >
+              <div class="card-body">
+                <span
+                  class="py-2 px-3 my-1 fw-semibold text-light d-inline-block bg-success rounded-5"
+                >
+                  2023 - Atualmente
+                </span>
+                <h5 class="card-title">
+                  Estágio - Analista de Sistemas - Serodonto
+                </h5>
+                <p class="card-text">
+                  Desenvolvimento de software Frontend utilizando React JS,
+                  Typescript e CSS com aplicações de regras de negócios,
+                  manutenção de código, implementação de responsividade,
+                  integração com API's, persistência de dados e criação de novas
+                  telas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3>Formação</h3>
+            <div
+              class="card bg-secondary text-light shadow-lg"
+              style="width: 80%"
+            >
+              <div class="card-body">
+                <span
+                  class="py-2 px-3 my-1 fw-semibold text-light d-inline-block bg-success rounded-5"
+                >
+                  2022 - 2025
+                </span>
+                <h5 class="card-title">
+                  Ciências da Computação - Centro Universitário Estácio de
+                  Ribeirão Preto
+                </h5>
+                <p class="card-text">
+                  Graduação em Ciências da Computação no Centro Universitário
+                  Estácio de Ribeirão Preto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container-lg">
+        <div class="row min-vh-100 align-items-center justify-content-center">
+          <h3>Projetos</h3>
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a
+                  href="https://fylo-loading-page-dark-theme.netlify.app"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/fylo.png"
+                    class="d-block w-100"
+                    alt="Fylo project"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a
+                  href="https://gym-typescript-samuerikcoder.netlify.app"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/egogym.png"
+                    class="d-block w-100"
+                    alt="Egohym project"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://mcity-d2f2f.web.app/" target="_blank">
+                  <img
+                    src="./images/mcity.png"
+                    class="d-block w-100"
+                    alt="MCity project"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item" target="_blank">
+                <a
+                  href="https://base-apparel-coming-soonsamuerkicoder.netlify.app/"
+                >
+                  <img
+                    src="./images/baseapparel.png"
+                    class="d-block w-100"
+                    alt="Base Apparel project"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item" target="_blank">
+                <a href="https://moviestowatchlist.netlify.app/">
+                  <img
+                    src="./images/moviestowatchlist.png"
+                    class="d-block w-100"
+                    alt="Movies To Watch List project"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item" target="_blank">
+                <a href="https://responsive-layout-full-website.netlify.app/">
+                  <img
+                    src="./images/challenge.png"
+                    class="d-block w-100"
+                    alt="Base Apparel project"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item" target="_blank">
+                <a href="https://intro-component-with-singup-form.netlify.app/">
+                  <img
+                    src="./images/form.png"
+                    class="d-block w-100"
+                    alt="Intro Component project"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item" target="_blank">
+                <a href="https://imaginative-scone-d776da.netlify.app/">
+                  <img
+                    src="./images/ordersumary.png"
+                    class="d-block w-100"
+                    alt="Order Sumary project"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item" target="_blank">
+                <a href="https://velvety-heliotrope-b7c481.netlify.app/">
+                  <img
+                    src="./images/insights.png"
+                    class="d-block w-100"
+                    alt="Insights project"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item" target="_blank">
+                <a href="https://splendorous-marzipan-e29c91.netlify.app/">
+                  <img
+                    src="./images/cars.png"
+                    class="d-block w-100"
+                    alt="Cars project"
+                  />
+                </a>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
